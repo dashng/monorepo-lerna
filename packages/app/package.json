@@ -3,6 +3,16 @@
   "version": "1.0.1",
   "private": true,
   "dependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.5",
+    "@babel/plugin-transform-arrow-functions": "^7.18.6",
+    "@babel/plugin-transform-react-jsx": "^7.19.0",
+    "@babel/plugin-transform-template-literals": "^7.18.9",
+    "@babel/plugin-transform-typescript": "^7.20.2",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -11,15 +21,17 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "babel-cli": "^6.26.0",
     "craco-babel-loader": "^1.0.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "my-react-typescript-package": "^1.0.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
     "react-scripts": "4.0.3",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "craco start",
+    "start": "react-scripts start",
     "build": "craco build",
     "test": "craco test",
     "eject": "craco eject"
@@ -32,7 +44,7 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
+      ">0.2%",  
       "not dead",
       "not op_mini all"
     ],
@@ -41,5 +53,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "my-react-typescript-package": "^1.0.0"
   }
 }

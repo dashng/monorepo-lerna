@@ -7,7 +7,8 @@
   },
   "scripts": {
     "start": "lerna exec --scope @tdotcode/app -- yarn start",
-    "release": "lerna publish from-package --dist-tag latest --contents src --registry=\"https://engci-maven-master.cisco.com/artifactory/api/npm/spis-npm\""
+    "release": "lerna publish from-package --dist-tag latest --contents src --registry=\"https://engci-maven-master.cisco.com/artifactory/api/npm/spis-npm\"",
+    "build": "lerna exec --scope @todcode/components -- yarn run build"
   },
   "workspaces": {
     "packages": [

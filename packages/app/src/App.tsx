@@ -1,18 +1,15 @@
-import React, { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { Button } from "@todcode/components";
+import { MyCounter } from "@todcode/components";
+// import { MyCounter } from 'my-react-typescript-package'
 
 function App() {
-  const [count, setCount] = useState(0);
 
-  console.log(Button);
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        Your count is {count}
-        <Button onClick={() => setCount((prev) => ++prev)} />
+        <MyCounter/>
       </header>
     </div>
   );
